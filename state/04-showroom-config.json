@@ -1,0 +1,186 @@
+{
+  "clientId": "biga-oliveira-veiculos",
+  "businessType": "concessionaria",
+  "_telemetry": {
+    "agent_id": "art-director-gold",
+    "skill_loaded": "design-master + project-genesis-harness",
+    "gold_reference_used": "concessionaria.gold.json"
+  },
+  "brandPalette": {
+    "primaryHex": "#0A0D14",
+    "secondaryHex": "#1852B4",
+    "accentHex": "#D4AF37"
+  },
+  "navbar": {
+    "brandDisplayName": "BIGA OLIVEIRA",
+    "logoUrl": "/logo.jpg",
+    "logoAspectRatio": 1.0
+  },
+  "hero": {
+    "badgeText": "COLEÇÃO CURADA DE RARIDADES",
+    "headline": "CHEVROLET C10 CUSTOM V8 318",
+    "subheadline": "Há mais de 15 anos com o mesmo proprietário. Dodge V8 318 cadastrado e escapamento full inox em Bragança Paulista.",
+    "heroMediaUrl": "/instagram/car-9.jpg",
+    "mediaValidatedClean": true,
+    "ctaPrimaryText": "Conhecer Veículo"
+  },
+  "activeSections": [
+    "inventory_grid",
+    "vip_deliveries_social_proof",
+    "institutional_lounge"
+  ],
+  "inventoryItems": [
+    {
+      "modelName": "CHEVROLET VERANEIO 4.1 6CC",
+      "year": 1978,
+      "specsSummary": "4.1 6cc Álcool · Pintura Estilo Patina · Ar-Condicionado · Revisada",
+      "imageUrl": "/instagram/car-1.jpg",
+      "imageAuditTag": "clean_vehicle_only"
+    },
+    {
+      "modelName": "TOYOTA YARIS XLS",
+      "year": 2023,
+      "specsSummary": "1.5 Flex Automático · Teto Solar · Full LED · Revisado Toyota",
+      "imageUrl": "/instagram/car-2.jpg",
+      "imageAuditTag": "clean_vehicle_only"
+    },
+    {
+      "modelName": "VOLKSWAGEN FUSCA 1966",
+      "year": 1966,
+      "specsSummary": "Placa Preta do Ano · Características Originais · Raríssimo Estado",
+      "imageUrl": "/instagram/car-3.jpg",
+      "imageAuditTag": "clean_vehicle_only"
+    },
+    {
+      "modelName": "VOLKSWAGEN GOLF 1.8 GL",
+      "year": 1998,
+      "specsSummary": "1.8 GL MK3 · Faróis, Lanternas Hella e Vidros Originais",
+      "imageUrl": "/instagram/car-4.jpg",
+      "imageAuditTag": "clean_vehicle_only"
+    },
+    {
+      "modelName": "MITSUBISHI OUTLANDER 2.0",
+      "year": 2016,
+      "specsSummary": "Blindado Nível IIIA Totality · Vidros Space Glass · 4 Pneus Novos",
+      "imageUrl": "/instagram/car-7.jpg",
+      "imageAuditTag": "clean_vehicle_only"
+    },
+    {
+      "modelName": "RENAULT SANDERO 1.6 EXPRESSION",
+      "year": 2015,
+      "specsSummary": "1.6 Hi-Power · 109.000 km · Cautelar Aprovada · Impecável",
+      "imageUrl": "/instagram/car-8.jpg",
+      "imageAuditTag": "clean_vehicle_only"
+    },
+    {
+      "modelName": "CHEVROLET C10 CUSTOM V8 318",
+      "year": 1973,
+      "specsSummary": "Dodge V8 318 no Doc · Escape 3 Pol Full Inox · 15 Anos Mesmo Dono",
+      "imageUrl": "/instagram/car-9.jpg",
+      "imageAuditTag": "clean_vehicle_only"
+    },
+    {
+      "modelName": "VOLKSWAGEN UP! TSI CONNECT",
+      "year": 2020,
+      "specsSummary": "97.000 km · Stage 2 Benga TV · Escape com Difusor · Laudo Aprovado",
+      "imageUrl": "/instagram/car-10.jpg",
+      "imageAuditTag": "clean_vehicle_only"
+    },
+    {
+      "modelName": "JEEP RENEGADE 1.8 SPORT",
+      "year": 2021,
+      "specsSummary": "115.000 km · Único Dono · Perícia Aprovada · Revisado",
+      "imageUrl": "/instagram/car-11.jpg",
+      "imageAuditTag": "clean_vehicle_only"
+    },
+    {
+      "modelName": "FORD MAVERICK TREMOR",
+      "year": 2025,
+      "specsSummary": "2.0 EcoBoost AWD · Apenas 5.000 km · Estado de Zero KM",
+      "imageUrl": "/instagram/car-12.jpg",
+      "imageAuditTag": "clean_vehicle_only"
+    },
+    {
+      "modelName": "VOLKSWAGEN UP! TSI CONNECT STG2",
+      "year": 2020,
+      "specsSummary": "Stage 2 Benga TV · Pressurização Inox · Rodas Scorro Aro 17",
+      "imageUrl": "/instagram/car-13.jpg",
+      "imageAuditTag": "clean_vehicle_only"
+    },
+    {
+      "modelName": "FORD ECOSPORT 2.0 XLT",
+      "year": 2011,
+      "specsSummary": "2.0 Flex Automático · 145.000 km · Revisado e Cautelar Aprovada",
+      "imageUrl": "/instagram/car-14.jpg",
+      "imageAuditTag": "clean_vehicle_only"
+    },
+    {
+      "modelName": "VOLKSWAGEN KOMBI 1.600 FURGÃO",
+      "year": 1993,
+      "specsSummary": "Restaurada · Comando e Carburação Preparados · Interior Custom",
+      "imageUrl": "/instagram/car-15.jpg",
+      "imageAuditTag": "clean_vehicle_only"
+    },
+    {
+      "modelName": "LAND ROVER DISCOVERY SPORT HSE",
+      "year": 2018,
+      "specsSummary": "2.0 Gasolina 5 Lugares · 73.000 km · 4 Pneus Pirelli Novos",
+      "imageUrl": "/instagram/car-16.jpg",
+      "imageAuditTag": "clean_vehicle_only"
+    },
+    {
+      "modelName": "VOLKSWAGEN BRASÍLIA 1.600",
+      "year": 1977,
+      "specsSummary": "Placa Preta Certificada · Rodas Taludas · Alavanca EMPI",
+      "imageUrl": "/instagram/car-17.jpg",
+      "imageAuditTag": "clean_vehicle_only"
+    },
+    {
+      "modelName": "TROLLER T4 3.0 TURBO DIESEL",
+      "year": 2010,
+      "specsSummary": "Teto Rígido · 3.0 Turbo Eletrônico Diesel · 157.000 km",
+      "imageUrl": "/instagram/car-18.jpg",
+      "imageAuditTag": "clean_vehicle_only"
+    },
+    {
+      "modelName": "SUZUKI SAMURAI CANVAS",
+      "year": 1997,
+      "specsSummary": "Restauração Completa · Injeção FuelTech FT300 · Capota Smittybilt",
+      "imageUrl": "/instagram/car-20.jpg",
+      "imageAuditTag": "clean_vehicle_only"
+    },
+    {
+      "modelName": "RAM 2500 5.9 CUMMINS",
+      "year": 2008,
+      "specsSummary": "Turbo Diesel 4x4 · 205.500 km · Revisada e Muito Íntegra",
+      "imageUrl": "/instagram/car-21.jpg",
+      "imageAuditTag": "clean_vehicle_only"
+    },
+    {
+      "modelName": "FORD JEEP WILLYS 4X4",
+      "year": 1973,
+      "specsSummary": "Motor 6 Cilindros · Câmbio 4 Marchas com Reduzida · Rodas F1000",
+      "imageUrl": "/instagram/car-22.jpg",
+      "imageAuditTag": "clean_vehicle_only"
+    },
+    {
+      "modelName": "CHRYSLER TOWN & COUNTRY",
+      "year": 2012,
+      "specsSummary": "7 Lugares · Blindado Nível IIIA · R$ 59.900 · Mecânica 100% OK",
+      "imageUrl": "/instagram/car-24.jpg",
+      "imageAuditTag": "clean_vehicle_only"
+    }
+  ],
+  "vipDeliveries": [
+    {
+      "caption": "Entrega expressa e atendimento privativo com hora marcada no Showroom Vila Verde.",
+      "imageUrl": "/instagram/car-2.jpg",
+      "imageAuditTag": "lifestyle_or_delivery"
+    },
+    {
+      "caption": "Curadoria exclusiva e intermediação transparente para clientes colecionadores em todo o Brasil.",
+      "imageUrl": "/instagram/car-9.jpg",
+      "imageAuditTag": "lifestyle_or_delivery"
+    }
+  ]
+}
