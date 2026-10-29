@@ -23,6 +23,29 @@ export interface Vehicle {
  * Contempla todos os posts de fotos de carros disponíveis até o Chrysler Town & Country.
  */
 export const INVENTORY_VEHICLES: Vehicle[] = [
+  // Hyundai ix35 GL 2018
+  {
+    id: "hyundai-ix35-gl-2018",
+    brand: "HYUNDAI",
+    model: "IX35 GL 2.0",
+    version: "MOTOR 2.0 FLEX 16V • CÂMBIO AUTOMÁTICO 6 MARCHAS",
+    year: "2018/2018",
+    km: "130.000 km",
+    price: "R$ 85.900,00",
+    category: "SUVs de Luxo",
+    image: "/instagram/hyundai-ix35-gl-2018.jpg",
+    power: "167 CV",
+    acceleration: "10.4s",
+    topSpeed: "178 km/h",
+    slogan: "APROVADA EM CAUTELAR • TOTALMENTE REVISADA • 4 PNEUS MICHELIN NOVOS",
+    tag: "DISPONÍVEL",
+    highlightSpecs: [
+      { label: "Motorização", value: "2.0 Flex 16V Câmbio Automático 6M" },
+      { label: "Procedência", value: "Perícia Cautelar 100% Aprovada" },
+      { label: "Manutenção", value: "Totalmente Revisada" },
+      { label: "Pneus", value: "4 Pneus Michelin Novos" }
+    ]
+  },
   // 1. Chevrolet Veraneio 1978
   {
     id: "chevrolet-veraneio-41-1978",

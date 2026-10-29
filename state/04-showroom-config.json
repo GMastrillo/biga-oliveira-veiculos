@@ -31,6 +31,13 @@
   ],
   "inventoryItems": [
     {
+      "modelName": "HYUNDAI IX35 GL 2.0",
+      "year": 2018,
+      "specsSummary": "2.0 Flex 16V Aut 6M · 130.000 km · Cautelar Aprovada · 4 Pneus Michelin",
+      "imageUrl": "/instagram/hyundai-ix35-gl-2018.jpg",
+      "imageAuditTag": "clean_vehicle_only"
+    },
+    {
       "modelName": "CHEVROLET VERANEIO 4.1 6CC",
       "year": 1978,
       "specsSummary": "4.1 6cc Álcool · Pintura Estilo Patina · Ar-Condicionado · Revisada",
