@@ -34,15 +34,15 @@ export const INVENTORY_VEHICLES: Vehicle[] = [
     km: "Restauração 0km",
     price: "R$ 249.900,00",
     category: "Superesportivos",
-    image: "/inventory/ford-f1000-1998/f1000-1.jpg",
+    image: "/inventory/ford-f1000-1998/f1000-7.jpg",
     gallery: [
+      "/inventory/ford-f1000-1998/f1000-7.jpg",
       "/inventory/ford-f1000-1998/f1000-1.jpg",
       "/inventory/ford-f1000-1998/f1000-2.jpg",
       "/inventory/ford-f1000-1998/f1000-3.jpg",
       "/inventory/ford-f1000-1998/f1000-4.jpg",
       "/inventory/ford-f1000-1998/f1000-5.jpg",
       "/inventory/ford-f1000-1998/f1000-6.jpg",
-      "/inventory/ford-f1000-1998/f1000-7.jpg",
       "/inventory/ford-f1000-1998/f1000-8.jpg",
       "/inventory/ford-f1000-1998/f1000-9.jpg",
       "/inventory/ford-f1000-1998/f1000-10.jpg"
