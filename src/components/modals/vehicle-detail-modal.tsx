@@ -1,9 +1,9 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useState, useRef } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "motion/react";
-import { X, ArrowUpRight } from "lucide-react";
+import { X, ArrowUpRight, ChevronLeft, ChevronRight } from "lucide-react";
 import { Vehicle } from "@/data/inventory";
 import { buildVehicleWhatsAppLink } from "@/lib/whatsapp";
 import { t } from "@/config/i18n";
@@ -15,6 +15,15 @@ interface VehicleDetailModalProps {
 }
 
 export function VehicleDetailModal({ vehicle, onClose }: VehicleDetailModalProps) {
+  const [selectedImage, setSelectedImage] = useState<string>("");
+  const thumbnailScrollRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (vehicle) {
+      setSelectedImage(vehicle.image);
+    }
+  }, [vehicle]);
+
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === "Escape") onClose();
@@ -26,6 +35,28 @@ export function VehicleDetailModal({ vehicle, onClose }: VehicleDetailModalProps
   if (!vehicle) return null;
 
   const whatsappUrl = buildVehicleWhatsAppLink(vehicle);
+  const images = vehicle.gallery && vehicle.gallery.length > 0 ? vehicle.gallery : [vehicle.image];
+  const activeImage = selectedImage || vehicle.image;
+  const activeIndex = images.indexOf(activeImage) !== -1 ? images.indexOf(activeImage) : 0;
+
+  const handlePrevImage = () => {
+    const prevIndex = (activeIndex - 1 + images.length) % images.length;
+    setSelectedImage(images[prevIndex]);
+  };
+
+  const handleNextImage = () => {
+    const nextIndex = (activeIndex + 1) % images.length;
+    setSelectedImage(images[nextIndex]);
+  };
+
+  const scrollThumbnails = (direction: "left" | "right") => {
+    if (thumbnailScrollRef.current) {
+      thumbnailScrollRef.current.scrollBy({
+        left: direction === "left" ? -140 : 140,
+        behavior: "smooth"
+      });
+    }
+  };
 
   return (
     <AnimatePresence>
@@ -60,34 +91,125 @@ export function VehicleDetailModal({ vehicle, onClose }: VehicleDetailModalProps
           </button>
 
           <div className="grid grid-cols-1 lg:grid-cols-12 max-h-[85vh] overflow-y-auto">
-            {/* Left: Vehicle Image Showcase */}
-            <div className="lg:col-span-6 bg-gradient-to-b from-slate-50 via-slate-100 to-slate-200 dark:from-slate-900/60 dark:via-slate-950 dark:to-[#070A0F] p-8 sm:p-12 flex flex-col justify-between relative border-b lg:border-b-0 lg:border-r border-slate-200 dark:border-slate-800 transition-colors">
-              <div className="flex items-center gap-2.5">
-                <BigaStripe size="xs" />
-                <span className="text-[10px] font-mono tracking-[0.3em] uppercase text-neutral-500 dark:text-slate-400">
-                  {vehicle.brand}
-                </span>
-                {vehicle.armored && (
-                  <span className="px-2.5 py-0.5 border border-blue-500/40 bg-blue-600/10 text-[9px] font-mono tracking-widest text-[#1852B4] dark:text-blue-400 uppercase">
-                    {t.modal.armoredBadge}
+            {/* Left: Vehicle Image Showcase & Gallery */}
+            <div className="lg:col-span-6 bg-gradient-to-b from-slate-50 via-slate-100 to-slate-200 dark:from-slate-900/60 dark:via-slate-950 dark:to-[#070A0F] p-6 sm:p-8 flex flex-col justify-between relative border-b lg:border-b-0 lg:border-r border-slate-200 dark:border-slate-800 transition-colors">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-2.5">
+                  <BigaStripe size="xs" />
+                  <span className="text-[10px] font-mono tracking-[0.3em] uppercase text-neutral-500 dark:text-slate-400">
+                    {vehicle.brand}
+                  </span>
+                  {vehicle.armored && (
+                    <span className="px-2.5 py-0.5 border border-blue-500/40 bg-blue-600/10 text-[9px] font-mono tracking-widest text-[#1852B4] dark:text-blue-400 uppercase">
+                      {t.modal.armoredBadge}
+                    </span>
+                  )}
+                </div>
+
+                {images.length > 1 && (
+                  <span className="text-[10px] font-mono tracking-widest text-neutral-500 dark:text-slate-400">
+                    {activeIndex + 1} / {images.length}
                   </span>
                 )}
               </div>
 
-              <div className="relative w-full h-[260px] sm:h-[360px] my-6 flex items-center justify-center">
+              {/* Main Image Display with Arrows */}
+              <div className="relative w-full h-[260px] sm:h-[320px] my-4 flex items-center justify-center group/viewer">
                 <Image
-                  src={vehicle.image}
+                  key={activeImage}
+                  src={activeImage}
                   alt={`${vehicle.brand} ${vehicle.model}`}
                   fill
                   sizes="(max-width: 1024px) 100vw, 50vw"
-                  className="object-contain drop-shadow-[0_20px_35px_rgba(0,0,0,0.15)] dark:drop-shadow-[0_20px_35px_rgba(0,0,0,0.9)]"
+                  className="object-contain drop-shadow-[0_20px_35px_rgba(0,0,0,0.15)] dark:drop-shadow-[0_20px_35px_rgba(0,0,0,0.9)] transition-all duration-300"
                 />
+
+                {images.length > 1 && (
+                  <>
+                    <button
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        handlePrevImage();
+                      }}
+                      className="absolute left-2 top-1/2 -translate-y-1/2 p-2 bg-black/60 hover:bg-black/85 text-white border border-white/10 opacity-80 hover:opacity-100 transition-all rounded-none"
+                      aria-label="Imagem anterior"
+                    >
+                      <ChevronLeft size={18} strokeWidth={2} />
+                    </button>
+                    <button
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        handleNextImage();
+                      }}
+                      className="absolute right-2 top-1/2 -translate-y-1/2 p-2 bg-black/60 hover:bg-black/85 text-white border border-white/10 opacity-80 hover:opacity-100 transition-all rounded-none"
+                      aria-label="Próxima imagem"
+                    >
+                      <ChevronRight size={18} strokeWidth={2} />
+                    </button>
+                  </>
+                )}
               </div>
 
-              <div className="flex items-center justify-between text-[10px] font-mono text-neutral-500 dark:text-slate-500 uppercase tracking-widest">
-                <span>{t.modal.officialPhoto}</span>
-                <span>{t.modal.inspected}</span>
-              </div>
+              {/* Bottom Carousel / Thumbnails Gallery */}
+              {images.length > 1 ? (
+                <div className="relative pt-2 border-t border-slate-200/80 dark:border-slate-800">
+                  <div className="flex items-center justify-between mb-2">
+                    <span className="text-[9px] font-mono uppercase tracking-widest text-neutral-500 dark:text-slate-400">
+                      Galeria de Fotos ({images.length})
+                    </span>
+                    <div className="flex items-center gap-1">
+                      <button
+                        onClick={() => scrollThumbnails("left")}
+                        className="p-1 text-neutral-500 hover:text-neutral-900 dark:text-slate-400 dark:hover:text-white transition-colors"
+                        aria-label="Rolar para esquerda"
+                      >
+                        <ChevronLeft size={14} />
+                      </button>
+                      <button
+                        onClick={() => scrollThumbnails("right")}
+                        className="p-1 text-neutral-500 hover:text-neutral-900 dark:text-slate-400 dark:hover:text-white transition-colors"
+                        aria-label="Rolar para direita"
+                      >
+                        <ChevronRight size={14} />
+                      </button>
+                    </div>
+                  </div>
+
+                  <div
+                    ref={thumbnailScrollRef}
+                    className="flex items-center gap-2 overflow-x-auto pb-1 scrollbar-thin scrollbar-thumb-slate-400/30 scrollbar-track-transparent"
+                    style={{ scrollbarWidth: "thin" }}
+                  >
+                    {images.map((img, idx) => {
+                      const isCurrent = img === activeImage;
+                      return (
+                        <button
+                          key={img + idx}
+                          onClick={() => setSelectedImage(img)}
+                          className={`relative flex-shrink-0 w-16 h-12 border transition-all overflow-hidden ${
+                            isCurrent
+                              ? "border-[#1852B4] ring-1 ring-[#1852B4] opacity-100 scale-105"
+                              : "border-slate-300 dark:border-slate-800 opacity-60 hover:opacity-100"
+                          }`}
+                        >
+                          <Image
+                            src={img}
+                            alt={`${vehicle.model} foto ${idx + 1}`}
+                            fill
+                            sizes="64px"
+                            className="object-cover"
+                          />
+                        </button>
+                      );
+                    })}
+                  </div>
+                </div>
+              ) : (
+                <div className="flex items-center justify-between text-[10px] font-mono text-neutral-500 dark:text-slate-500 uppercase tracking-widest pt-2 border-t border-slate-200/80 dark:border-slate-800">
+                  <span>{t.modal.officialPhoto}</span>
+                  <span>{t.modal.inspected}</span>
+                </div>
+              )}
             </div>
 
             {/* Right: Technical Dossier and Negotiation */}

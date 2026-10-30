@@ -8,6 +8,7 @@ export interface Vehicle {
   price: string;
   category: "Superesportivos" | "SUVs de Luxo" | "Blindados" | "0 KM";
   image: string;
+  gallery?: string[];
   power: string;
   acceleration: string;
   topSpeed: string;
@@ -23,6 +24,77 @@ export interface Vehicle {
  * Contempla todos os posts de fotos de carros disponíveis até o Chrysler Town & Country.
  */
 export const INVENTORY_VEHICLES: Vehicle[] = [
+  // Ford F-1000 1998 X10 Projeto Estilo Texano
+  {
+    id: "ford-f1000-x10-1998",
+    brand: "FORD",
+    model: "F-1000 1998 • X10",
+    version: "MOTOR X10 • PROJETO ESTILO TEXANO • RESTAURAÇÃO COMPLETA",
+    year: "1998/1998",
+    km: "Restauração 0km",
+    price: "R$ 249.900,00",
+    category: "Superesportivos",
+    image: "/inventory/ford-f1000-1998/f1000-1.jpg",
+    gallery: [
+      "/inventory/ford-f1000-1998/f1000-1.jpg",
+      "/inventory/ford-f1000-1998/f1000-2.jpg",
+      "/inventory/ford-f1000-1998/f1000-3.jpg",
+      "/inventory/ford-f1000-1998/f1000-4.jpg",
+      "/inventory/ford-f1000-1998/f1000-5.jpg",
+      "/inventory/ford-f1000-1998/f1000-6.jpg",
+      "/inventory/ford-f1000-1998/f1000-7.jpg",
+      "/inventory/ford-f1000-1998/f1000-8.jpg",
+      "/inventory/ford-f1000-1998/f1000-9.jpg",
+      "/inventory/ford-f1000-1998/f1000-10.jpg"
+    ],
+    power: "160 CV",
+    acceleration: "Torque Pesado",
+    topSpeed: "165 km/h",
+    slogan: "PROJETO TEXANO ÚNICO • PNEUS 35 POL • RODAS VITÓRIA ALUMÍNIO",
+    tag: "PROJETO EXCLUSIVO",
+    highlightSpecs: [
+      { label: "Motorização", value: "MWM X10 Turbo Diesel" },
+      { label: "Montagem", value: "Suspensão Elevada e Pneus 35 Pol" },
+      { label: "Rodas e Acabamento", value: "Rodas Vitória Alumínio e Madeira na Caçamba" },
+      { label: "Equipamentos", value: "Ar, Direção, Vidros/Travas e Alarme" }
+    ]
+  },
+  // Mitsubishi Pajero Dakar HPE 3.2 2015
+  {
+    id: "mitsubishi-pajero-dakar-hpe-2015",
+    brand: "MITSUBISHI",
+    model: "PAJERO DAKAR HPE 3.2",
+    version: "3.2 DIESEL 4X4 • BLINDAGEM TRUFFI • 7 LUGARES",
+    year: "2015/2015",
+    km: "138.000 km",
+    price: "R$ 157.900,00",
+    category: "Blindados",
+    armored: true,
+    image: "/inventory/pajero-dakar-2015/pajero-1.jpg",
+    gallery: [
+      "/inventory/pajero-dakar-2015/pajero-1.jpg",
+      "/inventory/pajero-dakar-2015/pajero-2.jpg",
+      "/inventory/pajero-dakar-2015/pajero-3.jpg",
+      "/inventory/pajero-dakar-2015/pajero-4.jpg",
+      "/inventory/pajero-dakar-2015/pajero-5.jpg",
+      "/inventory/pajero-dakar-2015/pajero-6.jpg",
+      "/inventory/pajero-dakar-2015/pajero-7.jpg",
+      "/inventory/pajero-dakar-2015/pajero-8.jpg",
+      "/inventory/pajero-dakar-2015/pajero-9.jpg",
+      "/inventory/pajero-dakar-2015/pajero-10.jpg"
+    ],
+    power: "210 CV",
+    acceleration: "Remap SFI Rally",
+    topSpeed: "180 km/h",
+    slogan: "BLINDAGEM TRUFFI • PREPARAÇÃO OFF-ROAD • GUINCHO 12.000 LB",
+    tag: "BLINDADO & OFF-ROAD",
+    highlightSpecs: [
+      { label: "Blindagem", value: "Truffi Nível IIIA • 7 Lugares" },
+      { label: "Preparação", value: "Lift Tadson, XBRI Brutus 285/70 e Snorkel OGZ" },
+      { label: "Equipamentos", value: "Guincho 12.000 lb Sintético e Rack Eqmax" },
+      { label: "Tecnologia", value: "Apple CarPlay/Android Auto e Som JBL" }
+    ]
+  },
   // Hyundai ix35 GL 2018
   {
     id: "hyundai-ix35-gl-2018",
