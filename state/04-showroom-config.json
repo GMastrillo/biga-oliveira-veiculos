@@ -31,6 +31,13 @@
   ],
   "inventoryItems": [
     {
+      "modelName": "VOLKSWAGEN FUSCA 1300 1983",
+      "year": 1983,
+      "specsSummary": "Placa Preta de Coleção · Teto Solar Britax · Rodas RAW 15 · Restaurado",
+      "imageUrl": "/inventory/vw-fusca-1300-1983/fusca-1.jpg",
+      "imageAuditTag": "clean_vehicle_only"
+    },
+    {
       "modelName": "FORD F-1000 X10 TEXANO",
       "year": 1998,
       "specsSummary": "MWM X10 Turbo Diesel · Restauração Completa · Pneus 35 · Estilo Texano",

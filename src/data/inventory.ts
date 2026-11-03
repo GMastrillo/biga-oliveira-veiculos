@@ -24,6 +24,45 @@ export interface Vehicle {
  * Contempla todos os posts de fotos de carros disponíveis até o Chrysler Town & Country.
  */
 export const INVENTORY_VEHICLES: Vehicle[] = [
+  // Volkswagen Fusca 1300 1983 Placa Preta com Teto Solar Britax
+  {
+    id: "vw-fusca-1300-1983-britax",
+    brand: "VOLKSWAGEN",
+    model: "FUSCA 1300 1983",
+    version: "PLACA PRETA • TETO SOLAR BRITAX • RODAS RAW 15",
+    year: "1983/1983",
+    km: "84.000 km",
+    price: "R$ 54.900,00",
+    category: "Superesportivos",
+    image: "/inventory/vw-fusca-1300-1983/fusca-1.jpg",
+    gallery: [
+      "/inventory/vw-fusca-1300-1983/fusca-1.jpg",
+      "/inventory/vw-fusca-1300-1983/fusca-2.jpg",
+      "/inventory/vw-fusca-1300-1983/fusca-3.jpg",
+      "/inventory/vw-fusca-1300-1983/fusca-4.jpg",
+      "/inventory/vw-fusca-1300-1983/fusca-5.jpg",
+      "/inventory/vw-fusca-1300-1983/fusca-6.jpg",
+      "/inventory/vw-fusca-1300-1983/fusca-7.jpg",
+      "/inventory/vw-fusca-1300-1983/fusca-8.jpg",
+      "/inventory/vw-fusca-1300-1983/fusca-9.jpg",
+      "/inventory/vw-fusca-1300-1983/fusca-10.jpg",
+      "/inventory/vw-fusca-1300-1983/fusca-11.jpg",
+      "/inventory/vw-fusca-1300-1983/fusca-12.jpg",
+      "/inventory/vw-fusca-1300-1983/fusca-13.jpg",
+      "/inventory/vw-fusca-1300-1983/fusca-14.jpg"
+    ],
+    power: "46 CV",
+    acceleration: "Boxer Aircooled 1300",
+    topSpeed: "125 km/h",
+    slogan: "VEÍCULO TOTALMENTE RESTAURADO • TETO BRITAX • PLACA PRETA DE COLEÇÃO",
+    tag: "PLACA PRETA",
+    highlightSpecs: [
+      { label: "Originalidade", value: "Veículo de Coleção com Placa Preta" },
+      { label: "Teto Solar", value: "Teto Solar Britax Estilo Ragtop" },
+      { label: "Rodas e Pneus", value: "Rodas RAW Aro 15 Clássicas" },
+      { label: "Suspensão", value: "Preparada: Catraca Dianteira e Facão Regulável" }
+    ]
+  },
   // Ford F-1000 1998 X10 Projeto Estilo Texano
   {
     id: "ford-f1000-x10-1998",
