@@ -24,6 +24,160 @@ export interface Vehicle {
  * Contempla todos os posts de fotos de carros disponíveis até o Chrysler Town & Country.
  */
 export const INVENTORY_VEHICLES: Vehicle[] = [
+  // Jeep Renegade Trailhawk Flex 4x4 2024
+  {
+    id: "jeep-renegade-trailhawk-2024",
+    brand: "JEEP",
+    model: "RENEGADE TRAILHAWK 4X4",
+    version: "1.3 TURBO T270 FLEX 185 CV • 4X4 • CÂMBIO 9M • FULL LED",
+    year: "2024/2024",
+    km: "45.000 km",
+    price: "R$ 116.900,00",
+    category: "SUVs de Luxo",
+    image: "/inventory/jeep-renegade-trailhawk-2024/renegade-1.jpg",
+    gallery: [
+      "/inventory/jeep-renegade-trailhawk-2024/renegade-1.jpg",
+      "/inventory/jeep-renegade-trailhawk-2024/renegade-2.jpg",
+      "/inventory/jeep-renegade-trailhawk-2024/renegade-3.jpg",
+      "/inventory/jeep-renegade-trailhawk-2024/renegade-4.jpg",
+      "/inventory/jeep-renegade-trailhawk-2024/renegade-5.jpg",
+      "/inventory/jeep-renegade-trailhawk-2024/renegade-6.jpg"
+    ],
+    power: "185 CV",
+    acceleration: "T270 Turbo Flex 4x4",
+    topSpeed: "202 km/h",
+    slogan: "VERSÃO TOPO TRAILHAWK • TRAÇÃO 4X4 INTEGRAL • CÂMBIO DE 9 VELOCIDADES",
+    tag: "NOVO NO ESTOQUE",
+    highlightSpecs: [
+      { label: "Motorização", value: "1.3 Turbo T270 Flex 185 cv" },
+      { label: "Transmissão", value: "Câmbio Automático 9 Marchas c/ Tração 4x4" },
+      { label: "Quilometragem", value: "Apenas 45.000 km Rodados" },
+      { label: "Design", value: "Branca c/ Detalhes Preto e Vermelho Trailhawk" }
+    ]
+  },
+  // Renault Duster 2.0 Dynamique 2016
+  {
+    id: "renault-duster-dynamique-2016",
+    brand: "RENAULT",
+    model: "DUSTER DYNAMIQUE 2.0",
+    version: "2.0 FLEX 16V AUTOMÁTICA • TOTALMENTE REVISADA",
+    year: "2016/2016",
+    km: "139.000 km",
+    price: "R$ 57.900,00",
+    category: "SUVs de Luxo",
+    image: "/inventory/renault-duster-2016/duster-1.jpg",
+    gallery: [
+      "/inventory/renault-duster-2016/duster-1.jpg",
+      "/inventory/renault-duster-2016/duster-2.jpg",
+      "/inventory/renault-duster-2016/duster-3.jpg",
+      "/inventory/renault-duster-2016/duster-4.jpg",
+      "/inventory/renault-duster-2016/duster-5.jpg",
+      "/inventory/renault-duster-2016/duster-6.jpg",
+      "/inventory/renault-duster-2016/duster-7.jpg",
+      "/inventory/renault-duster-2016/duster-8.jpg",
+      "/inventory/renault-duster-2016/duster-9.jpg"
+    ],
+    power: "148 CV",
+    acceleration: "2.0 Flex 16V",
+    topSpeed: "180 km/h",
+    slogan: "ESPAÇO E ROBUSTEZ • COR MARROM METÁLICO • IMPECÁVEL MANUTENÇÃO",
+    tag: "DISPONÍVEL",
+    highlightSpecs: [
+      { label: "Motorização", value: "2.0 16V Flex Câmbio Automático" },
+      { label: "Quilometragem", value: "139.000 km Originais" },
+      { label: "Condição", value: "Totalmente Revisada e Laudo Cautelar Aprovado" },
+      { label: "Conforto", value: "Central Multimídia Media NAV e Rodas Especiais" }
+    ]
+  },
+  // Harley-Davidson Road Glide 117 2025
+  {
+    id: "harley-davidson-road-glide-2025",
+    brand: "HARLEY-DAVIDSON",
+    model: "ROAD GLIDE 117",
+    version: "MILWAUKEE-EIGHT 117 • 1.300 KM • PAINEL SKYLINE OS",
+    year: "2025/2025",
+    km: "1.300 km",
+    price: "R$ 174.900,00",
+    category: "Superesportivos",
+    image: "/inventory/harley-road-glide-2025/roadglide-1.jpg",
+    gallery: [
+      "/inventory/harley-road-glide-2025/roadglide-1.jpg",
+      "/inventory/harley-road-glide-2025/roadglide-2.jpg",
+      "/inventory/harley-road-glide-2025/roadglide-3.jpg",
+      "/inventory/harley-road-glide-2025/roadglide-4.jpg",
+      "/inventory/harley-road-glide-2025/roadglide-5.jpg"
+    ],
+    power: "105 CV",
+    acceleration: "175 Nm Torque",
+    topSpeed: "200 km/h",
+    slogan: "ESTADO DE ZERO KM • NOVO DESIGN DE CARENAGEM • CENTRAL MULTIMÍDIA TOUCH",
+    tag: "ESTADO DE 0 KM",
+    highlightSpecs: [
+      { label: "Motorização", value: "Milwaukee-Eight 117 V-Twin 1.923 cc" },
+      { label: "Quilometragem", value: "Apenas 1.300 km Rodados" },
+      { label: "Painel", value: "Display TFT Skyline OS com Navegação" },
+      { label: "Acabamento", value: "Cromados e Pintura Impecáveis sem Detalhes" }
+    ]
+  },
+  // Gurgel Xavante 1973 Placa Preta
+  {
+    id: "gurgel-xavante-1973",
+    brand: "GURGEL",
+    model: "XAVANTE X12 1973",
+    version: "PLACA PRETA DE COLEÇÃO • RESTAURAÇÃO TOTAL • CAPOTA MARROM",
+    year: "1973/1973",
+    km: "Coleção",
+    price: "R$ 79.900,00",
+    category: "Superesportivos",
+    image: "/inventory/gurgel-xavante-1973/gurgel-1.jpg",
+    gallery: [
+      "/inventory/gurgel-xavante-1973/gurgel-1.jpg",
+      "/inventory/gurgel-xavante-1973/gurgel-2.jpg",
+      "/inventory/gurgel-xavante-1973/gurgel-3.jpg",
+      "/inventory/gurgel-xavante-1973/gurgel-4.jpg",
+      "/inventory/gurgel-xavante-1973/gurgel-5.jpg",
+      "/inventory/gurgel-xavante-1973/gurgel-6.jpg",
+      "/inventory/gurgel-xavante-1973/gurgel-7.jpg",
+      "/inventory/gurgel-xavante-1973/gurgel-8.jpg"
+    ],
+    power: "50 CV",
+    acceleration: "Boxer 1600 VW",
+    topSpeed: "120 km/h",
+    slogan: "ICÔNICO CLÁSSICO NACIONAL • PARA-BRISA REBATÍVEL • RARIDADE DE COLEÇÃO",
+    tag: "PLACA PRETA",
+    highlightSpecs: [
+      { label: "Coleção", value: "Placa Preta Certificada de Colecionador" },
+      { label: "Restauração", value: "Chassi, Carroceria Plasteel e Mecânica Restaurados" },
+      { label: "Detalhes", value: "Para-brisa Rebatível e Capota em Lona Marrom" },
+      { label: "Interior", value: "Estofamento Personalizado e Painel Clássico" }
+    ]
+  },
+  // Harley-Davidson Sportster 883R 2010
+  {
+    id: "harley-davidson-883r-2010",
+    brand: "HARLEY-DAVIDSON",
+    model: "SPORTSTER 883R",
+    version: "RODAS V-ROD • PNEU TRASEIRO 240 • VANCE & HINES",
+    year: "2010/2010",
+    km: "24.000 km",
+    price: "R$ 42.900,00",
+    category: "Superesportivos",
+    image: "/inventory/harley-883r-2010/harley-883-1.jpg",
+    gallery: [
+      "/inventory/harley-883r-2010/harley-883-1.jpg"
+    ],
+    power: "52 CV",
+    acceleration: "Evolution 883 cc",
+    topSpeed: "170 km/h",
+    slogan: "PROJETO EXCLUSIVO CUSTOMIZADO • BANCO PEDRINHO • GUIDÃO 14 POL",
+    tag: "CUSTOMIZADA",
+    highlightSpecs: [
+      { label: "Rodas & Pneus", value: "Rodas V-Rod com Pneu 120 Dianteiro e 240 Traseiro" },
+      { label: "Escapamento", value: "Escape Esportivo Vance & Hines com Ronco Marcante" },
+      { label: "Ergonomia", value: "Guidão Seca Sovaco 14 Pol e Banco Sela Pedrinho" },
+      { label: "Acessórios", value: "Bolha Dianteira Café Racer e Pintura Laranja Icônica" }
+    ]
+  },
   // Volkswagen Fusca 1300 1983 Placa Preta com Teto Solar Britax
   {
     id: "vw-fusca-1300-1983-britax",
@@ -180,29 +334,6 @@ export const INVENTORY_VEHICLES: Vehicle[] = [
       { label: "Destaque", value: "Roda Macio e Chama Muita Atenção" }
     ]
   },
-  // 2. Toyota Yaris XLS 2023
-  {
-    id: "toyota-yaris-xls-2023",
-    brand: "TOYOTA",
-    model: "YARIS XLS",
-    version: "1.5 16V FLEX AUTOMÁTICO • TETO SOLAR & FULL LED",
-    year: "2023/2023",
-    km: "Revisado",
-    price: "R$ 84.900,00",
-    category: "Superesportivos",
-    image: "/instagram/car-2.jpg",
-    power: "110 CV",
-    acceleration: "10.8s",
-    topSpeed: "180 km/h",
-    slogan: "REVISADO EM CONCESSIONÁRIA • TOPO DE LINHA COM TETO SOLAR",
-    tag: "TOPO DE LINHA",
-    highlightSpecs: [
-      { label: "Versão", value: "XLS Topo de Linha com Teto Solar" },
-      { label: "Iluminação", value: "Faróis Full LED + DRL" },
-      { label: "Interior", value: "Bancos em Couro, Paddle Shift e Ar Digital" },
-      { label: "Histórico", value: "Todas as Revisões em Concessionária" }
-    ]
-  },
   // 3. Volkswagen Fusca 1966 Placa Preta
   {
     id: "vw-fusca-1966-placa-preta",
@@ -273,29 +404,6 @@ export const INVENTORY_VEHICLES: Vehicle[] = [
       { label: "Conservação", value: "Extremamente Bem Cuidado" }
     ]
   },
-  // 8. Renault Sandero 1.6 Expression 2015
-  {
-    id: "renault-sandero-expression-2015",
-    brand: "RENAULT",
-    model: "SANDERO 1.6 EXPRESSION",
-    version: "1.6 8V HI-POWER FLEX • CAUTELAR APROVADA",
-    year: "2015/2015",
-    km: "109.000 km",
-    price: "R$ 40.900,00",
-    category: "Superesportivos",
-    image: "/instagram/car-8.jpg",
-    power: "106 CV",
-    acceleration: "11.0s",
-    topSpeed: "179 km/h",
-    slogan: "IMPECÁVEL E COM LAUDO CAUTELAR APROVADO • 109.000 KM",
-    tag: "LAUDO APROVADO",
-    highlightSpecs: [
-      { label: "Quilometragem", value: "109.000 km Originais" },
-      { label: "Perícia", value: "Laudo Cautelar Aprovado" },
-      { label: "Motorização", value: "1.6 Hi-Power Forte e Econômico" },
-      { label: "Estado", value: "Impecável e Revisado" }
-    ]
-  },
   // 9. Chevrolet C10 1973 V8 318
   {
     id: "chevrolet-c10-v8-1973",
@@ -340,29 +448,6 @@ export const INVENTORY_VEHICLES: Vehicle[] = [
       { label: "Exaustão", value: "Escapamento Esportivo com Difusor" },
       { label: "Rodas & Pneus", value: "Conjunto de Rodas e Pneus Novos" },
       { label: "Perícia", value: "Aprovado em Laudo Cautelar" }
-    ]
-  },
-  // 11. Jeep Renegade 1.8 Sport 2021
-  {
-    id: "jeep-renegade-sport-2021",
-    brand: "JEEP",
-    model: "RENEGADE 1.8 SPORT",
-    version: "1.8 16V E.TORQ FLEX AUTOMÁTICO • ÚNICO DONO",
-    year: "2021/2021",
-    km: "115.000 km",
-    price: "R$ 64.900,00",
-    category: "SUVs de Luxo",
-    image: "/instagram/car-11.jpg",
-    power: "139 CV",
-    acceleration: "11.1s",
-    topSpeed: "182 km/h",
-    slogan: "ÚNICO DONO • PERÍCIA CAUTELAR APROVADA E REVISADO",
-    tag: "ÚNICO DONO",
-    highlightSpecs: [
-      { label: "Procedência", value: "Único Dono" },
-      { label: "Perícia", value: "Laudo Cautelar Aprovado" },
-      { label: "Quilometragem", value: "115.000 km Revisados" },
-      { label: "Conservação", value: "Em Ótimo Estado Geral" }
     ]
   },
   // 12. Ford Maverick Tremor 2025
@@ -480,29 +565,6 @@ export const INVENTORY_VEHICLES: Vehicle[] = [
       { label: "Versão", value: "HSE Topo de Linha 5 Lugares" }
     ]
   },
-  // 17. Volkswagen Brasília 1.600 Placa Preta 1977
-  {
-    id: "vw-brasilia-1600-placa-preta-1977",
-    brand: "VOLKSWAGEN",
-    model: "BRASÍLIA 1.600",
-    version: "PLACA PRETA COM CERTIFICADO DE COLEÇÃO • ALAVANCA EMPI",
-    year: "1977/1977",
-    km: "23.600 km",
-    price: "R$ 25.900,00",
-    category: "Superesportivos",
-    image: "/instagram/car-17.jpg",
-    power: "65 CV",
-    acceleration: "Boxer 1600",
-    topSpeed: "135 km/h",
-    slogan: "PLACA PRETA CERTIFICADA • RODAS TALUDAS DE ALUMÍNIO & ESCAPE ESPORTIVO",
-    tag: "PLACA PRETA",
-    highlightSpecs: [
-      { label: "Certificação", value: "Placa Preta com Certificado de Coleção" },
-      { label: "Customização", value: "Suspensão Rebaixada & Rodas Taludas Alumínio" },
-      { label: "Performance", value: "Alavanca EMPI + Escapamento Esportivo" },
-      { label: "Interior", value: "Monocromático de Época Preservado" }
-    ]
-  },
   // 18. Troller T4 3.0 Diesel 2010
   {
     id: "troller-t4-30-diesel-2010",
@@ -570,29 +632,6 @@ export const INVENTORY_VEHICLES: Vehicle[] = [
       { label: "Quilometragem", value: "205.500 km" },
       { label: "Conservação", value: "Muito Íntegra e Revisada" },
       { label: "Presença", value: "Força Bruta e Capacidade Inigualável" }
-    ]
-  },
-  // 22. Ford Jeep 4x4 1973
-  {
-    id: "ford-jeep-4x4-1973",
-    brand: "FORD",
-    model: "JEEP WILLYS 4X4",
-    version: "MOTOR 6 CILINDROS • CÂMBIO 4 MARCHAS COM REDUZIDA",
-    year: "1973/1973",
-    km: "Coleção",
-    price: "R$ 44.900,00",
-    category: "Superesportivos",
-    image: "/instagram/car-22.jpg",
-    power: "6 Cilindros",
-    acceleration: "4x4 Reduzida",
-    topSpeed: "Clássico 4x4",
-    slogan: "MOTOR 6 CILINDROS • 4X4 COM REDUZIDA • RODAS RARÍSSIMAS DE F1000",
-    tag: "CLÁSSICO 6CC 4X4",
-    highlightSpecs: [
-      { label: "Motorização", value: "6 Cilindros Forte e Confiável" },
-      { label: "Transmissão", value: "Câmbio 4 Marchas + 4x4 com Reduzida" },
-      { label: "Rodas", value: "Rodas de F1000 Raríssimas" },
-      { label: "Mecânica", value: "Veículo Totalmente Revisado" }
     ]
   },
   // 24. Chrysler Town & Country 2011/2012 Blindada

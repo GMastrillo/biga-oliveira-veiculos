@@ -31,6 +31,41 @@
   ],
   "inventoryItems": [
     {
+      "modelName": "JEEP RENEGADE TRAILHAWK 4X4",
+      "year": 2024,
+      "specsSummary": "1.3 T270 Flex 185 cv 4x4 · 45.000 km · Câmbio Aut 9M · Teto e Faróis Full LED",
+      "imageUrl": "/inventory/jeep-renegade-trailhawk-2024/renegade-1.jpg",
+      "imageAuditTag": "clean_vehicle_only"
+    },
+    {
+      "modelName": "RENAULT DUSTER DYNAMIQUE 2.0",
+      "year": 2016,
+      "specsSummary": "2.0 Flex 16V Automática · 139.000 km · Marrom Metálico · Totalmente Revisada",
+      "imageUrl": "/inventory/renault-duster-2016/duster-1.jpg",
+      "imageAuditTag": "clean_vehicle_only"
+    },
+    {
+      "modelName": "HARLEY-DAVIDSON ROAD GLIDE",
+      "year": 2025,
+      "specsSummary": "Milwaukee-Eight 117 · Apenas 1.300 km · Painel Skyline OS · Sem Detalhes",
+      "imageUrl": "/inventory/harley-road-glide-2025/roadglide-1.jpg",
+      "imageAuditTag": "clean_vehicle_only"
+    },
+    {
+      "modelName": "GURGEL XAVANTE X12 1973",
+      "year": 1973,
+      "specsSummary": "Placa Preta Coleção · Totalmente Restaurado · Para-brisa Rebatível",
+      "imageUrl": "/inventory/gurgel-xavante-1973/gurgel-1.jpg",
+      "imageAuditTag": "clean_vehicle_only"
+    },
+    {
+      "modelName": "HARLEY SPORTSTER 883R",
+      "year": 2010,
+      "specsSummary": "24.000 km · Rodas V-Rod · Pneu 240 · Escape Vance & Hines · Guidão 14 Pol",
+      "imageUrl": "/inventory/harley-883r-2010/harley-883-1.jpg",
+      "imageAuditTag": "clean_vehicle_only"
+    },
+    {
       "modelName": "VOLKSWAGEN FUSCA 1300 1983",
       "year": 1983,
       "specsSummary": "Placa Preta de Coleção · Teto Solar Britax · Rodas RAW 15 · Restaurado",
@@ -66,13 +101,6 @@
       "imageAuditTag": "clean_vehicle_only"
     },
     {
-      "modelName": "TOYOTA YARIS XLS",
-      "year": 2023,
-      "specsSummary": "1.5 Flex Automático · Teto Solar · Full LED · Revisado Toyota",
-      "imageUrl": "/instagram/car-2.jpg",
-      "imageAuditTag": "clean_vehicle_only"
-    },
-    {
       "modelName": "VOLKSWAGEN FUSCA 1966",
       "year": 1966,
       "specsSummary": "Placa Preta do Ano · Características Originais · Raríssimo Estado",
@@ -94,13 +122,6 @@
       "imageAuditTag": "clean_vehicle_only"
     },
     {
-      "modelName": "RENAULT SANDERO 1.6 EXPRESSION",
-      "year": 2015,
-      "specsSummary": "1.6 Hi-Power · 109.000 km · Cautelar Aprovada · Impecável",
-      "imageUrl": "/instagram/car-8.jpg",
-      "imageAuditTag": "clean_vehicle_only"
-    },
-    {
       "modelName": "CHEVROLET C10 CUSTOM V8 318",
       "year": 1973,
       "specsSummary": "Dodge V8 318 no Doc · Escape 3 Pol Full Inox · 15 Anos Mesmo Dono",
@@ -112,13 +133,6 @@
       "year": 2020,
       "specsSummary": "97.000 km · Stage 2 Benga TV · Escape com Difusor · Laudo Aprovado",
       "imageUrl": "/instagram/car-10.jpg",
-      "imageAuditTag": "clean_vehicle_only"
-    },
-    {
-      "modelName": "JEEP RENEGADE 1.8 SPORT",
-      "year": 2021,
-      "specsSummary": "115.000 km · Único Dono · Perícia Aprovada · Revisado",
-      "imageUrl": "/instagram/car-11.jpg",
       "imageAuditTag": "clean_vehicle_only"
     },
     {
@@ -157,13 +171,6 @@
       "imageAuditTag": "clean_vehicle_only"
     },
     {
-      "modelName": "VOLKSWAGEN BRASÍLIA 1.600",
-      "year": 1977,
-      "specsSummary": "Placa Preta Certificada · Rodas Taludas · Alavanca EMPI",
-      "imageUrl": "/instagram/car-17.jpg",
-      "imageAuditTag": "clean_vehicle_only"
-    },
-    {
       "modelName": "TROLLER T4 3.0 TURBO DIESEL",
       "year": 2010,
       "specsSummary": "Teto Rígido · 3.0 Turbo Eletrônico Diesel · 157.000 km",
@@ -182,13 +189,6 @@
       "year": 2008,
       "specsSummary": "Turbo Diesel 4x4 · 205.500 km · Revisada e Muito Íntegra",
       "imageUrl": "/instagram/car-21.jpg",
-      "imageAuditTag": "clean_vehicle_only"
-    },
-    {
-      "modelName": "FORD JEEP WILLYS 4X4",
-      "year": 1973,
-      "specsSummary": "Motor 6 Cilindros · Câmbio 4 Marchas com Reduzida · Rodas F1000",
-      "imageUrl": "/instagram/car-22.jpg",
       "imageAuditTag": "clean_vehicle_only"
     },
     {
